@@ -1,0 +1,82 @@
+* {
+    box-sizing          : border-box;
+    margin              : 0;
+    font-family         : sans-serif;
+}
+
+body, html  { 
+    height              : 100vh;
+    width               : 100vw;
+}
+
+
+@media (orientation: portrait) {
+    #head { height: 30vh;   }
+    #main { height: 70vh;   }
+    #head { width:  100vw;  }
+    #main { width:  100vw;  }
+    #head { float:  none;   }
+    #main { float:  none;   }
+    
+}
+
+@media (orientation: landscape) {
+    #head {
+        height: 100vh;
+        width: 50vw;
+        float: left;
+        
+    }
+    h1 {
+        margin-top: 30vh;
+    }
+    #main {
+        height: 100vh;
+        width: 50vw;
+        float: left;
+    }
+}
+
+
+#head { background-color: cadetblue;     }
+#main { background-color: cornsilk; }
+
+
+pre span, pre {
+    font-family         : monospace;
+}
+
+h1 {
+    text-align          : center;
+    font-size: 5vw
+    
+}
+
+#sqlDebug  {
+    margin              : 1vh;
+}
+
+#sqlDebug pre {
+    background-color    : lightblue;
+    border              : 1px solid black;
+    border-radius       : 2vw;
+    padding             : 0.5vw;
+    font-size           : 1.5vw;
+    
+}
+
+#controlDiv {
+    width               : 50vw;
+    margin              : 0 auto;
+    text-align          : center;
+    padding-top         : 1vw;
+}
+
+#controlDiv button, select {
+    width               : 16vw;
+    height              : 6vw;
+    font-size           : 3vw;
+    vertical-align      : middle;
+}        
+
+
